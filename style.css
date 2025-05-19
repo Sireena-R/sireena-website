@@ -1,0 +1,154 @@
+/* Base Styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fffafc;
+  color: #4a2c2a;
+  transition: all 0.3s ease-in-out;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(to right, #ffcce5, #ffe0f0);
+  padding: 2rem 1rem;
+  text-align: center;
+  border-bottom: 4px solid #e0a3c1;
+}
+
+.logo {
+  max-width: 100px;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-family: 'Great Vibes', cursive;
+  margin: 0;
+  text-shadow: 1px 1px 3px rgba(184, 87, 132, 0.2);
+}
+
+header p {
+  font-style: italic;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+section {
+  padding: 2rem 1.5rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+h2 {
+  color: #b85784;
+  border-bottom: 2px solid #ffcce5;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+ol li, ul li {
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: #b85784;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #e06095;
+  text-decoration: underline;
+}
+
+/* Gallery Styles */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.nail-box {
+  background: #fff0f5;
+  border: 2px dashed #e0a3c1;
+  padding: 0.5rem;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.nail-box:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(184, 102, 150, 0.2);
+}
+
+.nail-box img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Contact & Footer */
+footer {
+  background: #ffe0f0;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Fade-in Animation */
+.fade-in {
+  animation: fadeIn 1s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Mobile-Specific Tweaks */
+@media (max-width: 600px) {
+  header {
+    padding: 1.5rem 1rem;
+  }
+
+  .logo {
+    max-width: 80px;
+  }
+
+  header h1 {
+    font-size: 2.4rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  section {
+    padding: 1.5rem 1rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .nail-box {
+    padding: 0.5rem;
+  }
+
+  .nail-box img {
+    border-radius: 8px;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}
